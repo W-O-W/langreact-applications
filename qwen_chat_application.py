@@ -1,6 +1,6 @@
 import os
-from core.application import Application, QwenLMApplication
-from core.plugin.plugins import ApplicationPlugin
+from langreact.core.application import Application, QwenLMApplication
+from langreact.core.plugin.plugins import ApplicationPlugin
 
 
 class QwenChatApplicationPlugin(ApplicationPlugin):

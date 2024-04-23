@@ -1,6 +1,6 @@
-from core.configure.default import Configure
-from core.application import Application, OpenAISession, Session
-from core.plugin.plugins import ApplicationPlugin
+from langreact.core.configure.default import Configure
+from langreact.core.application import Application, OpenAISession, Session
+from langreact.core.plugin.plugins import ApplicationPlugin
 
 
 class OpenaiChatApplication(Application):
