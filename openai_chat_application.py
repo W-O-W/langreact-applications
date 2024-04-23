@@ -1,4 +1,4 @@
-from conf.default import Configure
+from core.configure.default import Configure
 from core.application import Application, OpenAISession, Session
 from core.plugin.plugins import ApplicationPlugin
 
