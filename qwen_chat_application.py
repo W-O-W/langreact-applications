@@ -1,3 +1,4 @@
+import os
 from core.application import Application, QwenLMApplication
 from core.plugin.plugins import ApplicationPlugin
 
@@ -9,4 +10,5 @@ class QwenChatApplicationPlugin(ApplicationPlugin):
     def create_new_application(
         self, local_context, configure, reflection=False
     ) -> Application:
+        assert "DASHSCOPE_API_KEY" in os.environ, "please set DASHSCOPE_API_KEY in env"
         return QwenLMApplication("turbo", configure)
